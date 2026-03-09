@@ -117,27 +117,31 @@
             }
 
             header {
-                height: 150px; /* Altura más baja para móviles */
+                height: 150px; /* Mantenemos la altura que ya tenías */
                 padding: 10px;
-                justify-content: center; /* Centra el contenido en móvil */
-                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Mueve el contenido hacia ARRIBA */
+                align-items: flex-end;       /* Mueve el contenido hacia la DERECHA */
                 background-position: center;
             }
 
             .btn-download {
-                width: auto;       /* El botón ya no ocupa el ancho total */
-                font-size: 0.8em;  /* Texto más pequeño */
-                padding: 8px 12px; /* Menos relleno para reducir el tamaño */
+                width: auto;         /* El botón solo ocupa el espacio de su texto */
+                font-size: 0.7em;    /* Tamaño de letra más pequeño */
+                padding: 6px 12px;   /* Menos relleno para reducir el tamaño total */
                 box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-             }
+                margin-top: 5px;     /* Pequeño margen superior para que no pegue al borde */
+                margin-right: 5px;   /* Pequeño margen derecho */
+            }
 
             .container {
-                grid-template-columns: 1fr; /* Una sola columna de tarjetas */
+                grid-template-columns: 1fr; 
                 padding: 10px;
             }
 
             .card img {
-                height: 300px; /* Fotos un poco más grandes para que se vean bien */
+                height: 400px; 
             }
 
             .instagram-section {
